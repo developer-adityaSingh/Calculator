@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* Resest */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(45, 42, 42);
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* Utility class */
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    place-items: center;
+}
+
+.green{
+    color: rgb(50, 160, 50) !important;
+    font-weight: 500;
+}
+
+.orange{
+    background-color: orange !important;
+}
+/* Body Style */
+
+.container{
+    width: 420px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(45, 42, 42);
+    border-radius: 12px;
+    border: 1px solid gray;
+    box-shadow: 1px 4px 15px -4px white;
+}
+
+.calculatorBody{
+    width: 400px;
+    height: 530px;
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(45, 42, 42);
+}
+
+.calculatorScreen{
+    height: 100px;
+    background-color: rgb(45, 42, 42);
+}
+
+.calculatorScreen input{
+    height: 80px;
+    width: 100%;
+    margin-block: 10px;
+    padding: 10px;
+    background-color: rgb(45,42,42);
+    color: aliceblue;
+    font-size: 2rem;
+    text-align: right;
+    outline: none;
+    border: none;
+}
+
+
+.buttons{
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+
+.buttonSection{
+    justify-content: space-evenly;
+}
+
+.button{
+    height: 70px;
+    background-color: rgb(45, 42, 42);
+    color: aliceblue;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 1.56rem;
+    box-shadow: -8px -3px 20px -10px white;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color:  rgb(65, 61, 61);
+    transform: translateY(-3px)
+}
+
+.orange:hover{
+    background-color: rgba(255, 166, 0, 0.852) !important;
+}
