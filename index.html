@@ -10,43 +10,44 @@
     <div class="container">
         <div class="calculatorBody">
             <div class="calculatorScreen">
-                <input type="text" value="0">
+                <input id="inputArea" type="text">
             </div>
             <div class="calculatorButton">
                 <div class="buttons flex">
                     <div class="buttonSection flex">
-                        <div class="button grid green">AC</div>
-                        <div class="button grid green">DEL</div>
-                        <div class="button grid green">%</div>
-                        <div class="button grid green">/</div>
+                        <div class="button grid green" id="allClear">AC</div>
+                        <div class="button grid green" id="delete">DEL</div>
+                        <div class="button grid green" id="percentage">%</div>
+                        <div class="button grid green" id="divide">/</div>
                     </div>
                     <div class="buttonSection flex">
-                        <div class="button grid">7</div>
-                        <div class="button grid">8</div>
-                        <div class="button grid">9</div>
-                        <div class="button grid green">*</div>
+                        <div class="button grid" id="seven">7</div>
+                        <div class="button grid" id="eight">8</div>
+                        <div class="button grid" id="nine">9</div>
+                        <div class="button grid green" id="multiply">*</div>
                     </div>
                     <div class="buttonSection flex">
-                        <div class="button grid">4</div>
-                        <div class="button grid">5</div>
-                        <div class="button grid">6</div>
-                        <div class="button grid green">-</div>
+                        <div class="button grid" id="four">4</div>
+                        <div class="button grid" id="five">5</div>
+                        <div class="button grid" id="six">6</div>
+                        <div class="button grid green" id="subtract">-</div>
                     </div>
                     <div class="buttonSection flex">
-                        <div class="button grid">1</div>
-                        <div class="button grid">2</div>
-                        <div class="button grid">3</div>
-                        <div class="button grid green">+</div>
+                        <div class="button grid" id="one">1</div>
+                        <div class="button grid" id="two">2</div>
+                        <div class="button grid" id="three">3</div>
+                        <div class="button grid green" id="add">+</div>
                     </div>
                     <div class="buttonSection flex">
-                        <div class="button grid">00</div>
-                        <div class="button grid">0</div>
-                        <div class="button grid">.</div>
-                        <div class="button grid orange">=</div>
+                        <div class="button grid" id="dZero">00</div>
+                        <div class="button grid" id="zero">0</div>
+                        <div class="button grid" id="decimal">.</div>
+                        <div class="button grid orange" id="equalsTO">=</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
