@@ -69,7 +69,17 @@ buttons.addEventListener("click", (e)=>{
         document.getElementById("inputArea").value= `${onScreenValue}0`
     }
     else if(idNode == "equalsTO"){
+        let finalInput= Array.from(onScreenValue)
+        let finalInputLength= finalInput.length
+        if(finalInput[finalInputLength-1] == '+' || finalInput[finalInputLength-1] == '-' || finalInput[finalInputLength-1] == '*' || finalInput[finalInputLength-1] == '/' ){
+            finalInput.pop()
+            let finalInputInteger= String(finalInput.join(""))
+            document.getElementById("inputArea").value= `${onScreenValue} => ${finalInputInteger} = ${eval(finalInputInteger)}`
+        }
+
+        else{
         document.getElementById("inputArea").value= `${onScreenValue} = ${eval(onScreenValue)}`
+        }
     }
     else if(idNode == "decimal"){
         document.getElementById("inputArea").value= `${onScreenValue}.`
