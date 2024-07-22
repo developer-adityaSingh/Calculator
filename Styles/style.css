@@ -104,20 +104,25 @@ a{
 }
 
 @keyframes slideIn{
-    0%{
+    to{
+        opacity: 0;
         transform: translateY(-25px);
     }
-    100%{
+    from{
+        opacity: 1;
         transform: translateY(0);
     }
 }
 
 @keyframes slideOut{
-    0%{
+    from{
+        opacity: 1;
         transform: translateY(0);
     }
-    100%{
+    to{
+        opacity: 0;
         transform: translateY(-25px);
+    
     }
 }
 
