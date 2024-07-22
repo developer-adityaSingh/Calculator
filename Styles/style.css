@@ -96,7 +96,10 @@ a{
 
 .hidden{
     display: none;
-    animation: fadeOut 0.5s ease-out forwards;
+    
+}
+.fadeOut{
+    animation: slideOut 0.5s ease-out forwards;
 }
 .visible{
     display: block;
@@ -114,7 +117,7 @@ a{
     }
 }
 
-@keyframes fadeOut{
+@keyframes slideOut{
     from{
         opacity: 1;
         transform: translateY(0);
