@@ -93,7 +93,7 @@ a{
 .outputMsg, .inputMsg{
     font-size: 0.5rem;
     border: 1px solid black;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     background-color: whitesmoke;
     color: black;
     position: absolute;
