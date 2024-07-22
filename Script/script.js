@@ -53,7 +53,7 @@ buttons.addEventListener("click", (e)=>{
 
     else if(idNode == "multiply"){
         let newInput= "*"
-        document.getElementById("inputArea").value= `${onScreenValue}/`
+        document.getElementById("inputArea").value= `${onScreenValue}*`
         onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
@@ -67,7 +67,7 @@ buttons.addEventListener("click", (e)=>{
     }
     else if(idNode == "add"){
         let newInput= "+"
-        document.getElementById("inputArea").value= `${onScreenValue}/`
+        document.getElementById("inputArea").value= `${onScreenValue}+`
         onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
@@ -81,7 +81,7 @@ buttons.addEventListener("click", (e)=>{
     }
     else if(idNode == "subtract"){
         let newInput= "-"
-        document.getElementById("inputArea").value= `${onScreenValue}/`
+        document.getElementById("inputArea").value= `${onScreenValue}-`
         onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
@@ -165,7 +165,18 @@ buttons.addEventListener("click", (e)=>{
         }
     }
     else if(idNode == "percentage"){
+        let newInput= "%"
         document.getElementById("inputArea").value= `${onScreenValue}%`
+        onScreenInput= document.getElementById("inputArea")
+        let opArray= Array.from(onScreenValue)
+        let opLength= opArray.length
+        console.log(opArray[opLength-1])
+        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")){
+            opArray.pop()
+            opArray.push(`${newInput}`)
+            let finalOperatorInput= String(opArray.join(""))
+            document.getElementById("inputArea").value= `${finalOperatorInput}`
+        }      
     }
     
 })
