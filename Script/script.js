@@ -71,6 +71,7 @@ buttons.addEventListener("click", (e)=>{
     else if(idNode == "equalsTO"){
         document.getElementById("outputBox").classList.add("visible")
         document.getElementById("outputBox").classList.remove("hidden")
+        document.getElementById("outputBox").classList.remove("fadeOut")
         check=1
         let finalInput= Array.from(onScreenValue)
         let finalInputLength= finalInput.length
