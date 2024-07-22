@@ -1,6 +1,6 @@
 let buttons= document.querySelector('.buttons')
 const input = document.getElementById('inputArea');
-
+var check=0
 input.addEventListener('keypress', (event) => {
   event.preventDefault();
 });
@@ -69,29 +69,39 @@ buttons.addEventListener("click", (e)=>{
         document.getElementById("inputArea").value= `${onScreenValue}0`
     }
     else if(idNode == "equalsTO"){
+        document.getElementById("outputBox").style.display= "block"
+        check=1
         let finalInput= Array.from(onScreenValue)
         let finalInputLength= finalInput.length
         if(finalInput[finalInputLength-1] == '+' || finalInput[finalInputLength-1] == '-' || finalInput[finalInputLength-1] == '*' || finalInput[finalInputLength-1] == '/' ){
             finalInput.pop()
             let finalInputInteger= String(finalInput.join(""))
-            document.getElementById("inputArea").value= `${onScreenValue} => ${finalInputInteger} = ${eval(finalInputInteger)}`
+            document.getElementById("outputArea").value= `${eval(finalInputInteger)}`
         }
 
         else{
-        document.getElementById("inputArea").value= `${onScreenValue} = ${eval(onScreenValue)}`
+        document.getElementById("outputArea").value= `${eval(onScreenValue)}`
         }
     }
     else if(idNode == "decimal"){
         document.getElementById("inputArea").value= `${onScreenValue}.`
     }
     else if(idNode == "allClear"){
+        document.getElementById("outputBox").style.display= "none"
         document.getElementById("inputArea").value= ""
     }
     else if(idNode == "delete"){
-        let newArr= Array.from(onScreenValue)
-        newArr.pop()
-        let updatedNumber= String(newArr.join(""))
-        document.getElementById("inputArea").value= `${updatedNumber}`
+        if (check == 1){
+            document.getElementById("outputBox").style.display= "none"
+            check=0
+        }
+        else{
+
+            let newArr= Array.from(onScreenValue)
+            newArr.pop()
+            let updatedNumber= String(newArr.join(""))
+            document.getElementById("inputArea").value= `${updatedNumber}`
+        }
     }
     else if(idNode == "percentage"){
         document.getElementById("inputArea").value= `${onScreenValue}%`
