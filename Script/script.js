@@ -39,7 +39,6 @@ buttons.addEventListener("click", (e)=>{
     else if(idNode == "divide"){
         let newInput= "/"
         document.getElementById("inputArea").value= `${onScreenValue}/`
-        onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
         if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") ||  opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
@@ -53,7 +52,6 @@ buttons.addEventListener("click", (e)=>{
     else if(idNode == "multiply"){
         let newInput= "*"
         document.getElementById("inputArea").value= `${onScreenValue}*`
-        onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
         if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")|| opArray[opLength-1].includes("%")){
@@ -66,7 +64,6 @@ buttons.addEventListener("click", (e)=>{
     else if(idNode == "add"){
         let newInput= "+"
         document.getElementById("inputArea").value= `${onScreenValue}+`
-        onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
         if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
@@ -79,7 +76,6 @@ buttons.addEventListener("click", (e)=>{
     else if(idNode == "subtract"){
         let newInput= "-"
         document.getElementById("inputArea").value= `${onScreenValue}-`
-        onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
         if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
@@ -163,7 +159,6 @@ buttons.addEventListener("click", (e)=>{
     else if(idNode == "percentage"){
         let newInput= "%"
         document.getElementById("inputArea").value= `${onScreenValue}%`
-        onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
         if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
