@@ -46,13 +46,9 @@ a{
     position: relative;
 }
 
-.green{
-    color: rgb(50, 160, 50) !important;
-    font-weight: 500;
-}
-
-.orange{
-    background-color: orange !important;
+.operator{
+    background-color: rgba(0, 0, 225, 0.25);
+    /* color: blue !important; */
 }
 /* Body Style */
 
@@ -71,8 +67,6 @@ a{
 .calculatorBody{
     width: 30vw;
 }
-
-
 
 .calculatorScreen input{
     /* height: 14vh; */
@@ -100,8 +94,31 @@ a{
     top: 0%;
 }
 
-#outputBox{
+.hidden{
     display: none;
+    animation: slideOut 0.5s ease-out forwards;
+}
+.visible{
+    display: block;
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIn{
+    0%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-25px);
+    }
 }
 
 

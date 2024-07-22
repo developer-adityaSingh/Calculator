@@ -69,7 +69,8 @@ buttons.addEventListener("click", (e)=>{
         document.getElementById("inputArea").value= `${onScreenValue}0`
     }
     else if(idNode == "equalsTO"){
-        document.getElementById("outputBox").style.display= "block"
+        document.getElementById("outputBox").classList.add("visible")
+        document.getElementById("outputBox").classList.remove("hidden")
         check=1
         let finalInput= Array.from(onScreenValue)
         let finalInputLength= finalInput.length
@@ -87,7 +88,9 @@ buttons.addEventListener("click", (e)=>{
         document.getElementById("inputArea").value= `${onScreenValue}.`
     }
     else if(idNode == "allClear"){
-        document.getElementById("outputBox").style.display= "none"
+        document.getElementById("outputBox").classList.add("hidden")
+        document.getElementById("outputBox").classList.remove("visible")
+        
         document.getElementById("inputArea").value= ""
     }
     else if(idNode == "delete"){
