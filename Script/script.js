@@ -61,12 +61,26 @@ buttons.addEventListener("click", (e)=>{
         document.getElementById("inputBox").classList.add("hidden")
         document.getElementById("inputBox").classList.remove("visible")
         check=1
+        let regex = /^[a-zA-Z]+$/
+
+        
         let finalInput= Array.from(onScreenValue)
         let finalInputLength= finalInput.length
+        let alpArray= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q", "r","s","t","u","v","w","x","y","z", "A" ,"B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q", "R","S","T","U","V","W","X","Y","Z"]
+        for(let i=0; i<alpArray.length;i++){
+            if(finalInput.includes(alpArray[i])){
+                document.getElementById("outputArea").value= `Invalid Input`
+                return
+            }
+        } 
         if(finalInput[finalInputLength-1] == '+' || finalInput[finalInputLength-1] == '-' || finalInput[finalInputLength-1] == '*' || finalInput[finalInputLength-1] == '/' ){
             finalInput.pop()
             let finalInputInteger= String(finalInput.join(""))
             document.getElementById("outputArea").value= `${eval(finalInputInteger)}`
+        }
+        
+        else if(regex.test(`${onScreenValue}`)){
+            console.log( "Invalid Input")
         }
 
         else{
