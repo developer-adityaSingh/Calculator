@@ -37,16 +37,61 @@ buttons.addEventListener("click", (e)=>{
         document.getElementById("inputArea").value= `${onScreenValue}9`
     }
     else if(idNode == "divide"){
+        let newInput= "/"
         document.getElementById("inputArea").value= `${onScreenValue}/`
+        onScreenInput= document.getElementById("inputArea")
+        let opArray= Array.from(onScreenValue)
+        let opLength= opArray.length
+        console.log(opArray[opLength-1])
+        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")){
+            opArray.pop()
+            opArray.push(`${newInput}`)
+            let finalOperatorInput= String(opArray.join(""))
+            document.getElementById("inputArea").value= `${finalOperatorInput}`
+        }        
     }
+
     else if(idNode == "multiply"){
-        document.getElementById("inputArea").value= `${onScreenValue}*`
+        let newInput= "*"
+        document.getElementById("inputArea").value= `${onScreenValue}/`
+        onScreenInput= document.getElementById("inputArea")
+        let opArray= Array.from(onScreenValue)
+        let opLength= opArray.length
+        console.log(opArray[opLength-1])
+        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")){
+            opArray.pop()
+            opArray.push(`${newInput}`)
+            let finalOperatorInput= String(opArray.join(""))
+            document.getElementById("inputArea").value= `${finalOperatorInput}`
+        }        
     }
     else if(idNode == "add"){
-        document.getElementById("inputArea").value= `${onScreenValue}+`
+        let newInput= "+"
+        document.getElementById("inputArea").value= `${onScreenValue}/`
+        onScreenInput= document.getElementById("inputArea")
+        let opArray= Array.from(onScreenValue)
+        let opLength= opArray.length
+        console.log(opArray[opLength-1])
+        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")){
+            opArray.pop()
+            opArray.push(`${newInput}`)
+            let finalOperatorInput= String(opArray.join(""))
+            document.getElementById("inputArea").value= `${finalOperatorInput}`
+        }        
     }
     else if(idNode == "subtract"){
-        document.getElementById("inputArea").value= `${onScreenValue}-`
+        let newInput= "-"
+        document.getElementById("inputArea").value= `${onScreenValue}/`
+        onScreenInput= document.getElementById("inputArea")
+        let opArray= Array.from(onScreenValue)
+        let opLength= opArray.length
+        console.log(opArray[opLength-1])
+        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")){
+            opArray.pop()
+            opArray.push(`${newInput}`)
+            let finalOperatorInput= String(opArray.join(""))
+            document.getElementById("inputArea").value= `${finalOperatorInput}`
+        }        
     }
     else if(idNode == "dZero"){
         document.getElementById("inputArea").value= `${onScreenValue}00`
