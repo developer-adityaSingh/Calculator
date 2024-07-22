@@ -58,6 +58,8 @@ buttons.addEventListener("click", (e)=>{
         document.getElementById("outputBox").classList.add("visible")
         document.getElementById("outputBox").classList.remove("hidden")
         document.getElementById("outputBox").classList.remove("fadeOut")
+        document.getElementById("inputBox").classList.add("hidden")
+        document.getElementById("inputBox").classList.remove("visible")
         check=1
         let finalInput= Array.from(onScreenValue)
         let finalInputLength= finalInput.length
@@ -76,22 +78,22 @@ buttons.addEventListener("click", (e)=>{
     }
     else if(idNode == "allClear"){
         document.getElementById("outputBox").classList.add("fadeOut")
-        setTimeout(()=>{
-            document.getElementById("outputBox").classList.add("hidden")
-        },500)
+       
+        document.getElementById("outputBox").classList.add("hidden")
+       
         
         document.getElementById("outputBox").classList.remove("visible")
-        
+        document.getElementById("inputBox").classList.add("visible")
+        document.getElementById("inputBox").classList.remove("hidden")
         document.getElementById("inputArea").value= ""
     }
     else if(idNode == "delete"){
         if (check == 1){
             document.getElementById("outputBox").classList.add("fadeOut")
-            setTimeout(()=>{
-                document.getElementById("outputBox").classList.add("hidden")
-            },500)
-        
+            document.getElementById("inputBox").classList.add("visible")
+            document.getElementById("inputBox").classList.remove("hidden")
             document.getElementById("outputBox").classList.remove("visible")
+            document.getElementById("outputBox").classList.add("hidden")
             check=0
         }
         else{
