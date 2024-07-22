@@ -1,20 +1,6 @@
 let buttons= document.querySelector('.buttons')
-const input = document.getElementById('inputArea');
 var check=0
-input.addEventListener('keypress', (event) => {
-  event.preventDefault();
-});
 
-
-// input.addEventListener('keydown', (event) => {
-//   event.preventDefault();
-// });
-
-// input.addEventListener('keyup', (event) => {
-//   event.preventDefault();
-// });
-
-// onScreenValue= document.getElementById("inputArea")
 buttons.addEventListener("click", (e)=>{
     let previousValue=0
     onScreenInput= document.getElementById("inputArea") 
