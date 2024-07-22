@@ -88,8 +88,7 @@ buttons.addEventListener("click", (e)=>{
         document.getElementById("inputArea").value= `${onScreenValue}.`
     }
     else if(idNode == "allClear"){
-
-        document.getElementById("outputBox").classList.add("fade-out")
+        
         document.getElementById("outputBox").classList.add("hidden")
         document.getElementById("outputBox").classList.remove("visible")
         
@@ -98,7 +97,7 @@ buttons.addEventListener("click", (e)=>{
     else if(idNode == "delete"){
         if (check == 1){
             document.getElementById("outputBox").classList.add("hidden")
-        document.getElementById("outputBox").classList.remove("visible")
+            document.getElementById("outputBox").classList.remove("visible")
             check=0
         }
         else{
