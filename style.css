@@ -158,7 +158,6 @@ a{
 @media only screen and (max-width:426px) {
     .container{
         width: 80vw;
-        padding: 0%;
     }
     .calculatorBody {
         width: 75vw;
