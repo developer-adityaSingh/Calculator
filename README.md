@@ -20,11 +20,14 @@ A simple, responsive calculator built using HTML, CSS, and JavaScript. This proj
 4. Use the `C` button to clear the input.
 
 ## Project Structure 📂
+
+```bash
 Calculator/
 │
 ├── index.html
 ├── styles.css
 └── script.js
+```
 
 ## Screenshots 📸
 
