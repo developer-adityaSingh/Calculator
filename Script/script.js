@@ -42,7 +42,6 @@ buttons.addEventListener("click", (e)=>{
         onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
-        console.log(opArray[opLength-1])
         if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") ||  opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
             opArray.pop()
             opArray.push(`${newInput}`)
@@ -57,7 +56,6 @@ buttons.addEventListener("click", (e)=>{
         onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
-        console.log(opArray[opLength-1])
         if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")|| opArray[opLength-1].includes("%")){
             opArray.pop()
             opArray.push(`${newInput}`)
@@ -71,7 +69,6 @@ buttons.addEventListener("click", (e)=>{
         onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
-        console.log(opArray[opLength-1])
         if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
             opArray.pop()
             opArray.push(`${newInput}`)
@@ -84,7 +81,6 @@ buttons.addEventListener("click", (e)=>{
         document.getElementById("inputArea").value= `${onScreenValue}-`
         onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
-        let opLength= opArray.length
         console.log(opArray[opLength-1])
         if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
             opArray.pop()
@@ -170,7 +166,6 @@ buttons.addEventListener("click", (e)=>{
         onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
-        console.log(opArray[opLength-1])
         if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
             opArray.pop()
             opArray.push(`${newInput}`)
