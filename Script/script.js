@@ -81,7 +81,7 @@ buttons.addEventListener("click", (e)=>{
         document.getElementById("inputArea").value= `${onScreenValue}-`
         onScreenInput= document.getElementById("inputArea")
         let opArray= Array.from(onScreenValue)
-        console.log(opArray[opLength-1])
+        let opLength= opArray.length
         if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
             opArray.pop()
             opArray.push(`${newInput}`)
