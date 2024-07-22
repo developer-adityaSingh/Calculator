@@ -6,13 +6,13 @@ input.addEventListener('keypress', (event) => {
 });
 
 
-input.addEventListener('keydown', (event) => {
-  event.preventDefault();
-});
+// input.addEventListener('keydown', (event) => {
+//   event.preventDefault();
+// });
 
-input.addEventListener('keyup', (event) => {
-  event.preventDefault();
-});
+// input.addEventListener('keyup', (event) => {
+//   event.preventDefault();
+// });
 
 // onScreenValue= document.getElementById("inputArea")
 buttons.addEventListener("click", (e)=>{
