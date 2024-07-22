@@ -43,7 +43,7 @@ buttons.addEventListener("click", (e)=>{
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
         console.log(opArray[opLength-1])
-        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")){
+        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") ||  opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
             opArray.pop()
             opArray.push(`${newInput}`)
             let finalOperatorInput= String(opArray.join(""))
@@ -58,7 +58,7 @@ buttons.addEventListener("click", (e)=>{
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
         console.log(opArray[opLength-1])
-        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")){
+        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")|| opArray[opLength-1].includes("%")){
             opArray.pop()
             opArray.push(`${newInput}`)
             let finalOperatorInput= String(opArray.join(""))
@@ -72,7 +72,7 @@ buttons.addEventListener("click", (e)=>{
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
         console.log(opArray[opLength-1])
-        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")){
+        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
             opArray.pop()
             opArray.push(`${newInput}`)
             let finalOperatorInput= String(opArray.join(""))
@@ -86,7 +86,7 @@ buttons.addEventListener("click", (e)=>{
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
         console.log(opArray[opLength-1])
-        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")){
+        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
             opArray.pop()
             opArray.push(`${newInput}`)
             let finalOperatorInput= String(opArray.join(""))
@@ -171,7 +171,7 @@ buttons.addEventListener("click", (e)=>{
         let opArray= Array.from(onScreenValue)
         let opLength= opArray.length
         console.log(opArray[opLength-1])
-        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/")){
+        if(opArray[opLength-1].includes("+") || opArray[opLength-1].includes("-") || opArray[opLength-1].includes("*") || opArray[opLength-1].includes("/") || opArray[opLength-1].includes("%")){
             opArray.pop()
             opArray.push(`${newInput}`)
             let finalOperatorInput= String(opArray.join(""))
