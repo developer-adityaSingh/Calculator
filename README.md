@@ -17,7 +17,7 @@ A simple, responsive calculator built using HTML, CSS, and JavaScript. This proj
 1. Enter the numbers using the numeric buttons.
 2. Use the arithmetic operation buttons (+, -, *, /) to perform calculations.
 3. Click `=` to see the result.
-4. Use the `C` button to clear the input.
+4. Use the `AC` button to clear the input.
 
 
 ## Screenshots 📸
