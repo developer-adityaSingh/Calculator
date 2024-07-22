@@ -170,3 +170,8 @@ buttons.addEventListener("click", (e)=>{
     }
     
 })
+
+setTimeout(()=>{
+    document.getElementById("preLoader").style.display= "none"
+},1700)
+
