@@ -22,7 +22,7 @@ A simple, responsive calculator built using HTML, CSS, and JavaScript. This proj
 
 ## Screenshots 📸
 
-![Calculator Screenshot](https://github.com/developer-adityaSingh/Calculator/blob/master/Assets/calculator-roan-sigma.vercel.app_.png)
+![Calculator Screenshot](https://github.com/developer-adityaSingh/Calculator/blob/master/Assets/calculator-roan-sigma.vercel.app_(Surface%20Duo).png)
 
 
 ## Author 👨‍💻
