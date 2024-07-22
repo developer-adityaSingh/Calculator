@@ -73,6 +73,7 @@ buttons.addEventListener("click", (e)=>{
                 return
             }
         } 
+        
         if(finalInput[finalInputLength-1] == '+' || finalInput[finalInputLength-1] == '-' || finalInput[finalInputLength-1] == '*' || finalInput[finalInputLength-1] == '/' ){
             finalInput.pop()
             let finalInputInteger= String(finalInput.join(""))
